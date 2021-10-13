@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
 import AdviceGenerator from './components/AdviceGenerator/AdviceGenerator';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
         <nav>
           <Navbar />
         </nav>
+        <ToastContainer position="top-center" />
         <Switch>
           <Route path="/" exact>
             <Home />

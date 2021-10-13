@@ -6,7 +6,7 @@ export const NavbarMenuList = [
     url: '/advice',
   },
   {
-    title: 'Insert Quote',
-    url: '/insert',
+    title: 'Add advice',
+    url: '/add',
   },
 ];

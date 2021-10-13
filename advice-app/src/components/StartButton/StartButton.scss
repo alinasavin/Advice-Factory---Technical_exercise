@@ -1,0 +1,12 @@
+@import '../../global.scss';
+
+.startButton {
+  background-color: $primary;
+  color: $textColor;
+  height: 30px;
+  width: 150px;
+  cursor: pointer;
+  border: none;
+  overflow: hidden;
+  border-radius: 8px;
+}

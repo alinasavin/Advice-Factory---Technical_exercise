@@ -11,14 +11,16 @@
 
   .card {
     background: whitesmoke;
-    width: 60%;
-    height: 40%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    width: 70%;
+    height: 70%;
+    @include flexCenter(column);
     border-radius: 25px;
     padding: 2%;
     box-shadow: 10px 10px;
+
+    @include mobilePhone {
+      height: 90%;
+    }
 
     .heading {
       display: flex;
@@ -30,20 +32,19 @@
       position: relative;
       outline: none;
       text-decoration: none;
-      border-radius: 50px;
+      border-radius: 8px;
       @include flexJustify(center);
       cursor: pointer;
       text-transform: uppercase;
-      height: 200px;
-      width: 210px;
+      height: 60px;
+      width: 150px;
       opacity: 1;
-      background-color: #ffffff;
-      border: 1px solid rgba(22, 76, 167, 0.6);
+      background-color: $primary;
+      margin-bottom: 50px;
 
       span {
-        color: $primary;
+        color: $textColor;
         font-weight: fontWeight(bold);
-        letter-spacing: 0.7px;
       }
     }
     .button:hover {

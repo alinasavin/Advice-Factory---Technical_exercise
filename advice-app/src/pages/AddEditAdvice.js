@@ -34,7 +34,7 @@ const AddEditAdvice = () => {
           toast.success('Advice added successfully ');
         }
       });
-      // go back to show advice page using useHistory hook
+      // go back to show advice page once data has been added
       setTimeout(() => history.push('/show'), 500);
     }
   };

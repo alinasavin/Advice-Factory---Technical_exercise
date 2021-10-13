@@ -1,1 +1,49 @@
 @import '../global.scss';
+
+.listContainer {
+  margin-top: 100px;
+  .adviceTable {
+    border-collapse: collapse;
+    margin: auto;
+    font-size: fontSize(small);
+    max-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    thead {
+      background-color: $primary;
+      color: $textColor;
+      text-align: left;
+      tr {
+        background-color: $primary;
+        color: $textColor;
+        text-align: left;
+
+        th {
+          text-align: center;
+          padding: 12px 15px;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid #dddddd;
+
+        .adviceLine {
+          width: 300px;
+        }
+        .nameLine {
+          width: 120px;
+        }
+      }
+
+      tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+        color: $secondary;
+      }
+
+      tr:last-of-type {
+        border-bottom: 2px solid $primary;
+      }
+    }
+  }
+}

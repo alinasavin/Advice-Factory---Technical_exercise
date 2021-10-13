@@ -20,7 +20,40 @@ const ShowAdvice = () => {
     };
   }, []);
 
-  return <div className="listContainer">Advice List</div>;
+  return (
+    <div className="listContainer">
+      <table className="adviceTable">
+        <thead>
+          <tr>
+            <th> No</th>
+            <th>Name</th>
+            <th>Advice</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {Object.keys(data).map((id, index) => {
+            return (
+              <tr key={id}>
+                <th scope="row">{index + 1}</th>
+                <td className="nameLine">{data[id].name}</td>
+                <td className="adviceLine">{data[id].advice}</td>
+                <td>
+                  <Link to={`/update/${id}`}>
+                    <button className="editBtn">Edit</button>
+                  </Link>
+                  <button className="deleteBtn">Delete</button>
+                  <Link to={`/view/${id}`}>
+                    <button className="viewBtn">Edit</button>
+                  </Link>
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  );
 };
 
 export default ShowAdvice;

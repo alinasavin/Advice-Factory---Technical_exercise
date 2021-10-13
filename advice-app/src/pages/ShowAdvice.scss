@@ -48,7 +48,7 @@
             display: inline-block;
             border-radius: 5px;
             font-size: fontSize(extraSmall);
-            margin: 4px 2px;
+            margin: 5px 10px;
             cursor: pointer;
           }
 
@@ -60,10 +60,10 @@
             background-color: $secondary;
           }
 
-          .viewBtn {
-            background-color: #e7e7e7;
-            color: black;
-          }
+          //   .viewBtn {
+          //     background-color: #e7e7e7;
+          //     color: black;
+          //   }
         }
       }
 

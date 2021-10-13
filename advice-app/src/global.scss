@@ -1,0 +1,63 @@
+// variables
+
+$primary: #187c8e;
+$textColor: #fcfafa;
+$secondary: #f65676;
+
+//map - created to store font sizes and font weights
+
+$font-weights: (
+  'thin': 100,
+  'extraLight': 200,
+  'light': 300,
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
+  'extra-bold': 800,
+);
+
+$font-sizes: (
+  'extraSmall': 0.75rem,
+  'small': 0.875rem,
+  'regular': 1rem,
+  'medium': 1.25rem,
+  'large': 1.5rem,
+  'extraLarge': 2rem,
+);
+
+// function to usefor fontWeight
+@function fontWeight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+// function to usefor fontSize
+@function fontSize($size-name) {
+  @return map-get($font-sizes, $size-name);
+}
+
+@mixin flexCenter($direction) {
+  display: flex;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin flexJustify($content) {
+  display: flex;
+  align-items: center;
+  justify-content: $content;
+}
+$width: 1024px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
+
+$widthMobile: 768px;
+
+@mixin mobilePhone {
+  @media (max-width: #{$widthMobile}) {
+    @content;
+  }
+}

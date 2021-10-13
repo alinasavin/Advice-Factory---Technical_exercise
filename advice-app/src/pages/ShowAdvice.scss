@@ -34,6 +34,37 @@
         .nameLine {
           width: 120px;
         }
+
+        .buttonLine {
+          width: 200px;
+          padding-left: 30px;
+
+          button {
+            border: none;
+            color: $textColor;
+            padding: 5px 8px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: fontSize(extraSmall);
+            margin: 4px 2px;
+            cursor: pointer;
+          }
+
+          .editBtn {
+            background-color: $primary;
+          }
+
+          .deleteBtn {
+            background-color: $secondary;
+          }
+
+          .viewBtn {
+            background-color: #e7e7e7;
+            color: black;
+          }
+        }
       }
 
       tr:nth-of-type(even) {

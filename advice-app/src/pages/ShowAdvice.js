@@ -38,13 +38,13 @@ const ShowAdvice = () => {
                 <th scope="row">{index + 1}</th>
                 <td className="nameLine">{data[id].name}</td>
                 <td className="adviceLine">{data[id].advice}</td>
-                <td>
+                <td className="buttonLine">
                   <Link to={`/update/${id}`}>
                     <button className="editBtn">Edit</button>
                   </Link>
                   <button className="deleteBtn">Delete</button>
                   <Link to={`/view/${id}`}>
-                    <button className="viewBtn">Edit</button>
+                    <button className="viewBtn">View</button>
                   </Link>
                 </td>
               </tr>

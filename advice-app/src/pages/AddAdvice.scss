@@ -1,1 +1,34 @@
 @import '../global.scss';
+
+.formContainer {
+  margin-top: 100px;
+  .adviceForm {
+    margin: auto;
+    padding: 15px;
+    max-width: 400px;
+    align-content: center;
+
+    .textInput,
+    textarea,
+    select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .submitInput {
+      width: 100%;
+      background-color: $primary;
+      color: $textColor;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+}

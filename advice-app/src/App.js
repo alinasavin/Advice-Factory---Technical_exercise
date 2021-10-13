@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import AdviceGenerator from './components/AdviceGenerator/AdviceGenerator';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import AddAdvice from './pages/AddAdvice';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/advice">
             <AdviceGenerator />
+          </Route>
+          <Route path="/add">
+            <AddAdvice />
           </Route>
         </Switch>
       </Router>

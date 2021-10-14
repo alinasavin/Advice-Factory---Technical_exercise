@@ -1,5 +1,9 @@
 # Advice Factory
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b11faa4d-8ce7-4a04-bc96-7c97a36dead6/deploy-status)](https://app.netlify.com/sites/advice-factory/deploys)
+
+### [Live Link](https://advice-factory.netlify.app/)
+
 ## About the project
 
 After an amazing first chat with Amigo I was given the task to create a random quote inspirational quote generator that allows the user to view random quotes and add new quotes.

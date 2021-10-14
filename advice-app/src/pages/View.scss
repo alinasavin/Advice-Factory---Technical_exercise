@@ -1,0 +1,45 @@
+@import '../global.scss';
+
+.viewData {
+  margin-top: 100px;
+
+  .cardDetails {
+    width: 30%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    border: 10px $secondary;
+    margin: 0 auto;
+
+    .cardHeader {
+      height: 40%;
+      background: $secondary;
+      color: $textColor;
+      text-align: center;
+
+      p {
+        font-size: fontSize(regular);
+      }
+    }
+
+    .viewContainer {
+      padding: 4px 16px;
+      align-items: center;
+
+      strong {
+        color: $primary;
+      }
+
+      .viewButton {
+        background-color: $primary;
+        color: $textColor;
+        height: 30px;
+        width: 150px;
+        cursor: pointer;
+        border: none;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+    }
+  }
+}

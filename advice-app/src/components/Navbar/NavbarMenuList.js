@@ -10,7 +10,7 @@ export const NavbarMenuList = [
     url: '/add',
   },
   {
-    title: 'Show advice list',
+    title: 'See advice list',
     url: '/show',
   },
 ];

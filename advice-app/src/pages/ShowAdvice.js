@@ -57,6 +57,9 @@ const ShowAdvice = () => {
                   <button className="deleteBtn" onClick={() => onDelete(id)}>
                     Delete
                   </button>
+                  <Link to={`/view/${id}`}>
+                    <button className="viewBtn">View</button>
+                  </Link>
                 </td>
               </tr>
             );

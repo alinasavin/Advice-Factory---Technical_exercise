@@ -7,6 +7,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import AddEditAdvice from './pages/AddEditAdvice';
 import ShowAdvice from './pages/ShowAdvice';
+import View from './pages/View';
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
           </Route>
           <Route path="/show">
             <ShowAdvice />
+          </Route>
+          <Route path="/view/:id">
+            <View />
           </Route>
         </Switch>
       </Router>

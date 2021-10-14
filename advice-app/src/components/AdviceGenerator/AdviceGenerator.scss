@@ -6,17 +6,32 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: $primary;
-  color: $secondary;
 
   .card {
     background: whitesmoke;
-    width: 70%;
-    height: 70%;
     @include flexCenter(column);
-    border-radius: 25px;
     padding: 2%;
-    box-shadow: 10px 10px;
+    color: $textColor;
+    width: 60%;
+    height: 60%;
+    box-shadow: 0px 4px 15px rgba(103, 78, 59, 0.25);
+    border-radius: 20px;
+
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
 
     @include mobilePhone {
       height: 90%;
@@ -36,15 +51,16 @@
       @include flexJustify(center);
       cursor: pointer;
       text-transform: uppercase;
-      height: 60px;
+      height: 150px;
       width: 150px;
       opacity: 1;
-      background-color: $primary;
+      background-color: transparent;
       margin-bottom: 50px;
 
       span {
         color: $textColor;
         font-weight: fontWeight(bold);
+        font-size: fontSize(regular);
       }
     }
     .button:hover {

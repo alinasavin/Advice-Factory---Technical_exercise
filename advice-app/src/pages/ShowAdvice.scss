@@ -36,8 +36,8 @@
         }
 
         .buttonLine {
-          width: 200px;
-          padding-left: 30px;
+          width: 250px;
+          padding-left: 40px;
 
           button {
             border: none;
@@ -48,7 +48,7 @@
             display: inline-block;
             border-radius: 5px;
             font-size: fontSize(extraSmall);
-            margin: 5px 10px;
+            margin: 5px 5px;
             cursor: pointer;
           }
 
@@ -60,10 +60,10 @@
             background-color: $secondary;
           }
 
-          //   .viewBtn {
-          //     background-color: #e7e7e7;
-          //     color: black;
-          //   }
+          .viewBtn {
+            background-color: #e7e7e7;
+            color: black;
+          }
         }
       }
 

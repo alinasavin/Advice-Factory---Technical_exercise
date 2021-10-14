@@ -1,0 +1,116 @@
+@import '../../global.scss';
+.quotesSection {
+  .introQuotes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: 20px;
+    h1 {
+      color: $primary;
+      font-weight: fontWeight(bold);
+      @include mobilePhone {
+        font-size: fontSize(small);
+      }
+    }
+
+    h2 {
+      color: $secondary;
+      @include mobilePhone {
+        font-size: fontSize(small);
+      }
+    }
+  }
+
+  .quotes {
+    @include flexJustify(center);
+    position: relative;
+    height: 500px;
+
+    @include mobilePhone {
+      height: 500px;
+    }
+
+    .arrow {
+      height: 70px;
+      position: absolute;
+      cursor: pointer;
+      color: $primary;
+
+      @include mobilePhone {
+        display: none;
+      }
+
+      &.left {
+        left: 80px;
+      }
+
+      &.right {
+        right: 80px;
+      }
+    }
+
+    .slider {
+      height: 375px;
+      display: flex;
+      position: absolute;
+      left: 0; // changing the size you can move it as a .slider
+      transition: all 1s ease-out;
+
+      @include mobilePhone {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .quotesContainer {
+        width: 100vw;
+        @include flexJustify(center);
+        overflow: hidden;
+
+        .itemQuotes {
+          border-radius: 20px;
+          //   background-color: $accentColor;
+          @include flexCenter(row);
+          overflow: hidden;
+          width: 60%;
+
+          @include mobilePhone {
+            height: 100px;
+            margin: 20px 0;
+            width: 300px;
+          }
+
+          .textQuotes {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 30px;
+
+            @include mobilePhone {
+              padding: 0;
+            }
+
+            h3 {
+              color: $primary;
+              font-weight: fontWeight(bold);
+              font-size: 1.5rem;
+              margin-bottom: 10px;
+              @include mobilePhone {
+                font-size: 10px;
+              }
+            }
+
+            p {
+              color: $secondary;
+              font-size: 1rem;
+              @include mobilePhone {
+                font-size: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

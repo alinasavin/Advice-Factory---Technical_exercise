@@ -2,7 +2,7 @@ import './app.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Home from './pages/Home';
-import AdviceGenerator from './components/AdviceGenerator/AdviceGenerator';
+import AdviceGenerator from './pages/AdviceGenerator';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import AddEditAdvice from './pages/AddEditAdvice';

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import QuoteSlider from '../components/QuoteSlider/QuoteSlider';
 import './AdviceGenerator.scss';
 
 const AdviceGenerator = () => {
@@ -20,13 +21,16 @@ const AdviceGenerator = () => {
     setAdvice(adviceData.slip);
   };
   return (
-    <div className="advice">
-      <div className="card">
-        <h1 className="heading">{advice.advice}</h1>
-        <button className="button" onClick={getAdvice}>
-          <span>GIVE ME ADVICE!</span>
-        </button>
+    <div>
+      <div className="advice">
+        <div className="card">
+          <h1 className="heading">{advice.advice}</h1>
+          <button className="button" onClick={getAdvice}>
+            <span>GIVE ME ADVICE!</span>
+          </button>
+        </div>
       </div>
+      <QuoteSlider />
     </div>
   );
 };

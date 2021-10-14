@@ -16,6 +16,7 @@
       background: $secondary;
       color: $textColor;
       text-align: center;
+      border-radius: 8px;
 
       p {
         font-size: fontSize(regular);
@@ -24,7 +25,6 @@
 
     .viewContainer {
       padding: 4px 16px;
-      align-items: center;
 
       strong {
         color: $primary;
